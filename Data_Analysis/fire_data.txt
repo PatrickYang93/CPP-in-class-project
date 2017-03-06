@@ -1,0 +1,783 @@
+2014
+Buzzard Complex
+OR-BUD
+OR
+395,747
+2014
+Calton Complex
+WA-NES
+WA
+256,108
+2014
+Funny River
+AK
+AK
+195,858
+2014
+Happy Camp Complex
+CA-KNF
+CA
+134,056
+2013
+Rim
+CA-STF
+CA
+257,314
+2013
+Lime Hill
+AK-DOF
+AK
+201,808
+2013
+Moore Creek
+AK-DOF
+AK
+157,747
+2013
+Pony Complex
+ID-BOD
+ID
+149,384
+2013
+Silver
+NM-GNF
+NM
+138,546
+2013
+Elk Complex
+ID-BOF
+ID
+131,258
+2013
+Beaver Creek
+ID-TFD
+ID
+111,490
+2013
+West Fork Complex
+AK-DOF
+AK
+109,615
+2012
+Long Draw
+OR-VAD
+OR
+557,628
+2012
+Holloway
+NV-WID
+NV
+460,850
+2012
+Mustang Complex
+ID-SCF
+ID
+341,448
+2012
+Rush
+CA-NOD
+CA
+315,577
+2012
+Whitewater- Baldy
+NM-GNF
+NM
+297,845
+2012
+Ash Creek
+MT-NCA
+MT
+249,562
+2012
+Kinyon Road
+ID-TFD
+ID
+234,914
+2012
+Kinyon Road
+ID-TFD
+ID
+210,874
+2012
+Halstead
+ID-SCF
+ID
+181,948
+2012
+Rosebud Creek Complex
+MT-EAS
+MT
+171,444
+2012
+Miller Homestead
+OR-BUD
+OR
+162,765
+2012
+Miller Homestead
+OR-BUD
+OR
+160,853
+2012
+Trinity Ridge
+ID-BOF
+ID
+146,832
+2012
+Flattop 2
+ID-TFD
+ID
+140,954
+2012
+Chalky
+MT-MCD
+MT
+131,000
+2012
+Clay Springs
+UT-SCS
+UT
+107,846
+2011
+Wallow
+AZ- ASF
+AZ
+538,049
+2011
+Rock House
+TX-TFS
+TX
+314,444
+2011
+Honey Prairie
+GA-ONWR
+GA
+309,200
+2011
+Horseshoe 2
+SW
+AZ
+222,954
+2011
+Deaton Cole
+TX-TFS
+TX
+175,000
+2011
+Cooper Mountain Ranch
+TX-TFS
+TX
+162,625
+2011
+Wildcat
+TX-TFS
+TX
+159,308
+2011
+Las Conchas
+NM-N6S
+NM
+156,593
+2011
+Pk Complex
+TX-TFS
+TX
+126,734
+2011
+Swenson
+TX-TFS
+TX
+122,500
+2011
+Indian Creek
+NV-NDF
+NV
+110,827
+2011
+High Cascades
+NW
+OR
+108,154
+2011
+Southeast Texas Complex
+TX-TFS
+TX
+104,818
+2011
+Donaldson
+SW
+NM
+101,563
+2010
+Long Butte
+ID-TFD
+ID
+306,113
+2010
+Toklat
+AK-TAD
+AK
+171,727
+2010
+Jefferson
+ID-INL
+ID
+109,436
+2009
+Railbelt Complex
+AK-AKS
+AK
+636,224
+2009
+Minto Flats South
+AK-FAS
+AK
+517,078
+2009
+Crazy Mountain Complex
+AK-UYD
+AK
+447,420
+2009
+Little Black One
+AK-UYD
+AK
+349,450
+2009
+Big Creek
+WF
+AK
+169,639
+2009
+Titna River
+AK-TAD
+AK
+164,542
+2009
+Tonclonukna Creek
+AK-SWS
+AK
+164,318
+2009
+Station
+CA-ANF
+CA
+160,577
+2009
+Nowitna
+AK-AFS
+AK
+126,582
+2009
+Wood River 1
+AK-AFS
+AK
+125,382
+2009
+Rex Creek
+WF
+AK
+101,150
+2008
+Glass Fire
+TX-TXS
+TX
+219,556
+2008
+Klamath Theater
+CA-KNF
+CA
+192,038
+2008
+Basin Complex
+CA-LPF
+CA
+162,818
+2008
+Iron & Alps Complexes
+CA-SHF
+CA
+105,805
+2008
+Dunn Mtn. Assist
+MT-SOS
+MT
+102,383
+2007
+Murphy Complex
+ID-TFD
+ID
+652,016
+2007
+Big Turnaround Complex
+GA-OKR
+GA
+386,722
+2007
+Milford Flat
+UT-SWS
+UT
+363,052
+2007
+Cascade Complex
+ID-BOF
+ID
+302,376
+2007
+East Zone Complex
+ID-PAF
+ID
+300,022
+2007
+Zaca Two
+CA-LPF
+CA
+240,207
+2007
+Witch
+CA-MVU
+CA
+197,990
+2007
+Rowland
+ID-TFD
+ID
+180,000
+2007
+Winecup Complex
+NV-EKD
+NV
+163,767
+2007
+Bugaboo Scrub Fire
+GA-OKR
+GA
+160,727
+2007
+Elk Mountain
+ID-TFD
+ID
+160,000
+2007
+Egley Complex
+OR-BFZ
+OR
+140,359
+2007
+Antelope Complex
+NV-BMD
+NV
+136,778
+2007
+Shower Bath Complex
+ID-SCF
+ID
+122,600
+2007
+Florida Bugaboo
+FL-FNF
+FL
+108,574
+2007
+Rattlesnake
+ID-NPF
+ID
+102,000
+2006
+East Amarillo Complex
+TX-TXS
+TX
+907,245
+2006
+Eastern Oklahoma IA
+OK-OKS
+OK
+413,964
+2006
+North Central Texas IA
+TX-TXS
+TX
+250,942
+2006
+Winters
+NV-WID
+NV
+238,458
+2006
+Derby Fire
+MT-GNF
+MT
+223,570
+2006
+Crystal
+ID-IFD
+ID
+220,042
+2006
+Charleston Complex
+NV-EKD
+NV
+190,421
+2006
+Day
+CA-LPF
+CA
+162,702
+2006
+Sheep
+NV-EKD
+NV
+150,270
+2006
+Parks Hwy
+AK-FAS
+AK
+130,186
+2006
+Black Pulaski Complex
+MT-MCD
+MT
+124,905
+2006
+Pine Ridge Complex
+MT-SOS
+MT
+121,210
+2006
+Oklahoma Fire Response
+OK-OKS
+OK
+117,686
+2006
+South End Complex
+OR-BUD
+OR
+117,553
+2006
+Tripod Complex
+WA-OWF
+WA
+113,011
+2006
+Columbia Complex
+OR-UMF
+OR
+109,259
+2006
+Amazon
+NV-EKD
+NV
+108,564
+2006
+Bar Complex
+CA-SHF
+CA
+100,414
+2005
+Southern Nevada Complex
+NV-LVD
+NV
+508,751
+2005
+Cave Creek Complex
+AZ-TNF
+AZ
+248,310
+2005
+Clover
+ID-TFD
+ID
+192,846
+2005
+Delamar
+NV-ELD
+NV
+170,089
+2005
+Beaver Creek
+AK-UYD
+AK
+167,766
+2005
+Chapman Creek
+AK-TAD
+AK
+162,670
+2005
+Meadow Valley
+NV-ELD
+NV
+146,035
+2005
+Boundary Creek
+AK-UYD
+AK
+113,463
+2005
+Sheenjek River
+AK-UYD
+AK
+107,240
+2004
+Taylor Complex
+AK-TAS
+AK
+1,305,592
+2004
+Eagle Complex
+AK-UYD
+AK
+614,974
+2004
+Solstice Complex
+AK-UYD
+AK
+547,505
+2004
+Boundary Fire
+AK-FAS
+AK
+537,098
+2004
+Central Complex
+AK-UYD
+AK
+451,162
+2004
+Pingo
+AK-UYD
+AK
+285,885
+2004
+Winter Trail
+AK-UYD
+AK
+279,865
+2004
+Chicken Complex
+AK-TAS
+AK
+257,720
+2004
+Wolf Creek
+AK-UYD
+AK
+197,067
+2004
+Camp Creek
+AK-DAS
+AK
+175,815
+2004
+Evansville
+AK-TAD
+AK
+122,000
+2004
+Willow
+AZ-TNF
+AZ
+119,500
+2003
+Cedar
+CA-CNF
+CA
+273,246
+2003
+Needles
+WA-OWF
+WA
+213,000
+2003
+Missouri Breaks Complex
+MT-MCD
+MT
+130,927
+2003
+Simi Incident
+CA-VNC
+CA
+108,304
+2002
+Biscuit (formerly Florence)
+OR-SIF
+OR
+500,068
+2002
+Trimbly Creek
+OR-VAD
+OR
+480,000
+2002
+Rodeo/Chediski Complex
+AZ-FTA
+AZ
+468,638
+2002
+Kraft Complex
+SD-SRA
+SD
+351,000
+2002
+Geskamina Lake
+AK-TAD
+A
+257,549
+2002
+Reindeer
+AK-SWS
+A
+227,800
+2002
+Minchumina Group
+AK-TAD
+AK
+196,584
+2002
+McNally
+CA-SQF
+CA
+150,696
+2002
+Hayman
+CO-PSF
+CO
+137,760
+2002
+Blackjack Bay Complex
+GA-OKR
+GA
+124,492
+2002
+Tool Box Complex
+OR-FAF
+OR
+120,085
+2002
+Vinasale
+AK-AKS
+AK
+100,000
+2001
+Lakeview Complex
+OR-FRF
+OR
+179,400
+2001
+Survey Line
+AK- DOD
+AK
+106,800
+2000
+Valley Complex
+MT-BRF
+MT
+292,070
+2000
+Clear Creek Complex
+ID-SCF
+ID
+216,961
+2000
+Eastern Idaho Complex
+ID-IFD
+ID
+192,450
+2000
+Command 24
+WA-SPD
+WA
+192,000
+2000
+SCF Wilderness
+ID-SCF
+ID
+182,600
+2000
+Zitziana
+AK-TAD
+AK
+166,177
+2000
+Two Fork
+WA-SPD
+WA
+151,000
+2000
+Kate's Basin Complex
+WY-WRA
+WY
+137,600
+2000
+Diamond Peak
+ID-PAF
+ID
+125,000
+2000
+Bering Creek
+AK-TAD
+AK
+122,994
+2000
+Mule Dry
+WA-WFS
+WA
+110,000
+2000
+Jackson Fire
+OR-VAD
+OR
+108,000
+2000
+Maudlow/ Toston
+MT-CES
+MT
+100,000
+1999
+Dun Glen Complex
+NV-WID
+NV
+361,658
+1999
+Sadler Complex
+NV-EKD
+NV
+297,000
+1999
+Battle Mountain Complex
+NV-BWD
+NV
+208,031
+1999
+Corridor Complex
+NV-WID
+NV
+171,600
+1999
+Mule Butte
+ID-IFD
+ID
+144,000
+1999
+Big Bar Complex
+CA-SHF
+CA
+140,948
+1999
+Jungo Complex
+NV-WID
+NV
+125,480
+1999
+Kink
+AK-UYD
+AK
+100,000
+1997
+Inowak
+AK-AKS
+AK
+610,000
+#####
+*Data was aquired from https://www.nifc.gov/fireInfo/fireInfo_stats_lgFires.html on October 28, 2015
+

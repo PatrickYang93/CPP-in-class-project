@@ -1,0 +1,211 @@
+Year   Fire Name                   Location  State      Acres
+2014   Buzzard Complex             OR-BUD    OR        395747
+2014   Calton Complex              WA-NES    WA        256108
+2014   Funny River                 AK        AK        195858
+2014   Happy Camp Complex          CA-KNF    CA        134056
+2013   Rim                         CA-STF    CA        257314
+2013   Lime Hill                   AK-DOF    AK        201808
+2013   Moore Creek                 AK-DOF    AK        157747
+2013   Pony Complex                ID-BOD    ID        149384
+2013   Silver                      NM-GNF    NM        138546
+2013   Elk Complex                 ID-BOF    ID        131258
+2013   Beaver Creek                ID-TFD    ID        111490
+2013   West Fork Complex           AK-DOF    AK        109615
+2012   Long Draw                   OR-VAD    OR        557628
+2012   Holloway                    NV-WID    NV        460850
+2012   Mustang Complex             ID-SCF    ID        341448
+2012   Rush                        CA-NOD    CA        315577
+2012   Whitewater- Baldy           NM-GNF    NM        297845
+2012   Ash Creek                   MT-NCA    MT        249562
+2012   Kinyon Road                 ID-TFD    ID        234914
+2012   Kinyon Road                 ID-TFD    ID        210874
+2012   Halstead                    ID-SCF    ID        181948
+2012   Rosebud Creek Complex       MT-EAS    MT        171444
+2012   Miller Homestead            OR-BUD    OR        162765
+2012   Miller Homestead            OR-BUD    OR        160853
+2012   Trinity Ridge               ID-BOF    ID        146832
+2012   Flattop 2                   ID-TFD    ID        140954
+2012   Chalky                      MT-MCD    MT        131000
+2012   Clay Springs                UT-SCS    UT        107846
+2011   Wallow                      AZ- ASF   AZ        538049
+2011   Rock House                  TX-TFS    TX        314444
+2011   Honey Prairie               GA-ONWR   GA        309200
+2011   Horseshoe 2                 SW        AZ        222954
+2011   Deaton Cole                 TX-TFS    TX        175000
+2011   Cooper Mountain Ranch       TX-TFS    TX        162625
+2011   Wildcat                     TX-TFS    TX        159308
+2011   Las Conchas                 NM-N6S    NM        156593
+2011   Pk Complex                  TX-TFS    TX        126734
+2011   Swenson                     TX-TFS    TX        122500
+2011   Indian Creek                NV-NDF    NV        110827
+2011   High Cascades               NW        OR        108154
+2011   Southeast Texas Complex     TX-TFS    TX        104818
+2011   Donaldson                   SW        NM        101563
+2010   Long Butte                  ID-TFD    ID        306113
+2010   Toklat                      AK-TAD    AK        171727
+2010   Jefferson                   ID-INL    ID        109436
+2009   Railbelt Complex            AK-AKS    AK        636224
+2009   Minto Flats South           AK-FAS    AK        517078
+2009   Crazy Mountain Complex      AK-UYD    AK        447420
+2009   Little Black One            AK-UYD    AK        349450
+2009   Big Creek                   WF        AK        169639
+2009   Titna River                 AK-TAD    AK        164542
+2009   Tonclonukna Creek           AK-SWS    AK        164318
+2009   Station                     CA-ANF    CA        160577
+2009   Nowitna                     AK-AFS    AK        126582
+2009   Wood River 1                AK-AFS    AK        125382
+2009   Rex Creek                   WF        AK        101150
+2008   Glass Fire                  TX-TXS    TX        219556
+2008   Klamath Theater             CA-KNF    CA        192038
+2008   Basin Complex               CA-LPF    CA        162818
+2008   Iron & Alps Complexes       CA-SHF    CA        105805
+2008   Dunn Mtn. Assist            MT-SOS    MT        102383
+2007   Murphy Complex              ID-TFD    ID        652016
+2007   Big Turnaround Complex      GA-OKR    GA        386722
+2007   Milford Flat                UT-SWS    UT        363052
+2007   Cascade Complex             ID-BOF    ID        302376
+2007   East Zone Complex           ID-PAF    ID        300022
+2007   Zaca Two                    CA-LPF    CA        240207
+2007   Witch                       CA-MVU    CA        197990
+2007   Rowland                     ID-TFD    ID        180000
+2007   Winecup Complex             NV-EKD    NV        163767
+2007   Bugaboo Scrub Fire          GA-OKR    GA        160727
+2007   Elk Mountain                ID-TFD    ID        160000
+2007   Egley Complex               OR-BFZ    OR        140359
+2007   Antelope Complex            NV-BMD    NV        136778
+2007   Shower Bath Complex         ID-SCF    ID        122600
+2007   Florida Bugaboo             FL-FNF    FL        108574
+2007   Rattlesnake                 ID-NPF    ID        102000
+2006   East Amarillo Complex       TX-TXS    TX        907245
+2006   Eastern Oklahoma IA         OK-OKS    OK        413964
+2006   North Central Texas IA      TX-TXS    TX        250942
+2006   Winters                     NV-WID    NV        238458
+2006   Derby Fire                  MT-GNF    MT        223570
+2006   Crystal                     ID-IFD    ID        220042
+2006   Charleston Complex          NV-EKD    NV        190421
+2006   Day                         CA-LPF    CA        162702
+2006   Sheep                       NV-EKD    NV        150270
+2006   Parks Hwy                   AK-FAS    AK        130186
+2006   Black Pulaski Complex       MT-MCD    MT        124905
+2006   Pine Ridge Complex          MT-SOS    MT        121210
+2006   Oklahoma Fire Response      OK-OKS    OK        117686
+2006   South End Complex           OR-BUD    OR        117553
+2006   Tripod Complex              WA-OWF    WA        113011
+2006   Columbia Complex            OR-UMF    OR        109259
+2006   Amazon                      NV-EKD    NV        108564
+2006   Bar Complex                 CA-SHF    CA        100414
+2005   Southern Nevada Complex     NV-LVD    NV        508751
+2005   Cave Creek Complex          AZ-TNF    AZ        248310
+2005   Clover                      ID-TFD    ID        192846
+2005   Delamar                     NV-ELD    NV        170089
+2005   Beaver Creek                AK-UYD    AK        167766
+2005   Chapman Creek               AK-TAD    AK        162670
+2005   Meadow Valley               NV-ELD    NV        146035
+2005   Boundary Creek              AK-UYD    AK        113463
+2005   Sheenjek River              AK-UYD    AK        107240
+2004   Taylor Complex              AK-TAS    AK       1305592
+2004   Eagle Complex               AK-UYD    AK        614974
+2004   Solstice Complex            AK-UYD    AK        547505
+2004   Boundary Fire               AK-FAS    AK        537098
+2004   Central Complex             AK-UYD    AK        451162
+2004   Pingo                       AK-UYD    AK        285885
+2004   Winter Trail                AK-UYD    AK        279865
+2004   Chicken Complex             AK-TAS    AK        257720
+2004   Wolf Creek                  AK-UYD    AK        197067
+2004   Camp Creek                  AK-DAS    AK        175815
+2004   Evansville                  AK-TAD    AK        122000
+2004   Willow                      AZ-TNF    AZ        119500
+2003   Cedar                       CA-CNF    CA        273246
+2003   Needles                     WA-OWF    WA        213000
+2003   Missouri Breaks Complex     MT-MCD    MT        130927
+2003   Simi Incident               CA-VNC    CA        108304
+2002   Biscuit (formerly Florence) OR-SIF    OR        500068
+2002   Trimbly Creek               OR-VAD    OR        480000
+2002   Rodeo/Chediski Complex      AZ-FTA    AZ        468638
+2002   Kraft Complex               SD-SRA    SD        351000
+2002   Geskamina Lake              AK-TAD    A         257549
+2002   Reindeer                    AK-SWS    A         227800
+2002   Minchumina Group            AK-TAD    AK        196584
+2002   McNally                     CA-SQF    CA        150696
+2002   Hayman                      CO-PSF    CO        137760
+2002   Blackjack Bay Complex       GA-OKR    GA        124492
+2002   Tool Box Complex            OR-FAF    OR        120085
+2002   Vinasale                    AK-AKS    AK        100000
+2001   Lakeview Complex            OR-FRF    OR        179400
+2001   Survey Line                 AK- DOD   AK        106800
+2000   Valley Complex              MT-BRF    MT        292070
+2000   Clear Creek Complex         ID-SCF    ID        216961
+2000   Eastern Idaho Complex       ID-IFD    ID        192450
+2000   Command 24                  WA-SPD    WA        192000
+2000   SCF Wilderness              ID-SCF    ID        182600
+2000   Zitziana                    AK-TAD    AK        166177
+2000   Two Fork                    WA-SPD    WA        151000
+2000   Kate's Basin Complex        WY-WRA    WY        137600
+2000   Diamond Peak                ID-PAF    ID        125000
+2000   Bering Creek                AK-TAD    AK        122994
+2000   Mule Dry                    WA-WFS    WA        110000
+2000   Jackson Fire                OR-VAD    OR        108000
+2000   Maudlow/ Toston             MT-CES    MT        100000
+1999   Dun Glen Complex            NV-WID    NV        361658
+1999   Sadler Complex              NV-EKD    NV        297000
+1999   Battle Mountain Complex     NV-BWD    NV        208031
+1999   Corridor Complex            NV-WID    NV        171600
+1999   Mule Butte                  ID-IFD    ID        144000
+1999   Big Bar Complex             CA-SHF    CA        140948
+1999   Jungo Complex               NV-WID    NV        125480
+1999   Kink                        AK-UYD    AK        100000
+1997   Inowak                      AK-AKS    AK        610000
+Total(Square miles):                                    54813
+**********************************************************************
+
+State                                     Total Damage(Acres)
+OR                                                    3139871
+WA                                                    1035119
+AK                                                   10497103
+CA                                                    2702692
+ID                                                    5157564
+NM                                                     694547
+NV                                                    3548579
+MT                                                    1647071
+UT                                                     470898
+AZ                                                    1597451
+TX                                                    2543172
+GA                                                     981141
+FL                                                     108574
+OK                                                     531650
+SD                                                     351000
+A                                                      485349
+CO                                                     137760
+**********************************************************************
+
+Year                                      Total Damage(Acres)
+2014                                                   981769
+2013                                                  1257162
+2012                                                  3872340
+2011                                                  2712769
+2010                                                   587276
+2009                                                  2962362
+2008                                                   782600
+2007                                                  3717190
+2006                                                  3800402
+2005                                                  1817170
+2004                                                  4894183
+2003                                                   725477
+2002                                                  3114672
+2001                                                   286200
+2000                                                  2096852
+1999                                                  1548717
+**********************************************************************
+
+Worst Fires                                             Acres
+1                                                     1305592
+2                                                      907245
+3                                                      652016
+4                                                      636224
+5                                                      614974
+6                                                      610000
+7                                                      557628
+8                                                      547505
+9                                                      538049
+10                                                     537098
+**********************************************************************
