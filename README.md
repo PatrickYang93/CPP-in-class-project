@@ -1,1 +1,0 @@
-# CPP-in-class-project
