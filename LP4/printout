@@ -1,0 +1,1246 @@
+cat StrIndexed.h
+/*************************************************************************
+
+Author:            Qiguang Yang
+Last Rev. Date:    April 1, 2016
+Class Name:        StrIndexed
+
+Data Members:      length  (int)   - number of elements in the list
+
+**************************************************************************/
+#include <iostream>
+#include <string>
+#include "StrLL.h"
+using namespace std;
+
+#ifndef STRINDEXED_H
+#define STRINDEXED_H
+
+class StrIndexed : public StrLL {
+
+ private:
+	int length;
+
+ public:
+
+	StrIndexed();
+	int numElements();
+	bool insertAt(int,string);
+	bool removeAt(int,string &);
+	int  posInList(string);
+	void clear();
+	void dump(bool printLen = false);
+
+};
+#endif
+                                                                  
+*****************************************************************
+                                                                 
+cat StrIndexed.cpp
+/*************************************************************************
+
+Author:				Qiguang Yang
+Last Rev. Date:		April 1, 2016
+
+Description:		This StrIndexed class is the base class of classes StrStack 
+					and StrQueue. And it is public inheritance of StrLL class.
+					Because its clear and pump functions are directly used in
+					StrLL class. It consists functions to insert and remove nodes
+					from StrLL link list, clear and print link list. 
+**************************************************************************/
+#include <iostream>
+#include <string>
+#include "StrIndexed.h"
+using namespace std;
+
+#ifndef NULL
+#define NULL 0
+#endif
+
+// Default Constructo
+StrIndexed::StrIndexed(){ length = 0; };
+
+//Return the number of elements in the linked list
+int StrIndexed::numElements(){ return length; };
+
+//Insert an element into a specific place in the linked list
+bool StrIndexed::insertAt(int p,string v){ 
+	length++;
+	return StrLL::insertAt(p,v); 
+};
+
+//Remove an element from a specific place in the linked list
+bool StrIndexed::removeAt(int p,string &v){ 
+	length--;
+	return StrLL::removeAt(p,v); 
+};
+
+//Return the postition of current string in the linked list
+int StrIndexed::posInList(string v){ return StrLL::posInList(v); };
+
+//Clear StrLL linked list
+void StrIndexed::clear(){ StrLL::clear(); };
+
+//Print out the whole list
+void StrIndexed::dump(bool printLen){ 
+	
+	if(printLen == true){
+		StrLL::dump();
+		cout << length;
+	}
+
+	else{
+		StrLL::dump();
+	}
+};                                                                 
+*****************************************************************
+                                                                 
+cat StrStack.h
+/*************************************************************************
+
+Author:            Qiguang Yang
+Last Rev. Date:    April 1, 2016
+Class Name:        StrStack
+
+Data Members:      None
+
+**************************************************************************/
+#include <iostream>
+#include <string>
+#include "StrIndexed.h"
+using namespace std;
+
+#ifndef STRSTACK_H
+#define STRSTACK_H
+
+class StrStack : private StrIndexed{
+	
+public:
+	void clear();
+	void push(string);
+	bool pop(string &);
+	bool isEmpty();
+	void dump();
+};
+#endif                                                                 
+*****************************************************************
+                                                                 
+cat StrStack.cpp
+/*************************************************************************
+
+Author:				Qiguang Yang
+Last Rev. Date:		April 1, 2016
+
+Description:		This StrStack class is StrIndexed private inheritance.
+					It provides functions to push and pop members from link list.
+					All members in StrStack are not directly used in StrIndexed
+					class.
+**************************************************************************/
+#include <iostream>
+#include <string>
+#include "StrStack.h"
+#include "StrNode.h"
+using namespace std;
+
+#ifndef NULL
+#define NULL 0
+#endif
+
+//Clear StrLL linked list
+void StrStack::clear(){ StrIndexed::clear(); };
+
+//Insert a member at the top of the list.
+void StrStack::push(string v){ 
+	StrIndexed::insertAt(0,v);
+};
+
+//Remove a member from the front of the list.
+bool StrStack::pop(string &v){ 
+	if (Head == NULL){
+		v = "Absolutely nothing";
+		return false;
+	}
+
+	else{
+		StrIndexed::removeAt(0,v);
+		return true; 
+	}
+};
+
+//Check if the StrLL linked list is empty
+bool StrStack::isEmpty(){
+	if(StrIndexed::numElements() == 0){
+		return true;
+	}
+
+	else{
+		return false;
+	}
+};
+
+//Print out the whole list
+void StrStack::dump(){
+	cout << "top: ";
+	StrIndexed::dump();
+	cout << " :bottom";
+};                                                                 
+*****************************************************************
+                                                                 
+cat StrQueue.h
+/*************************************************************************
+
+Author:				Qiguang Yang
+Last Rev. Date:		April 1, 2016
+Class Name:			StrQueue
+
+Data Members:		None
+
+**************************************************************************/
+#include <iostream>
+#include <string>
+#include "StrIndexed.h"
+using namespace std;
+
+#ifndef STRQUEUE_H
+#define STRQUEUE_H
+
+class StrQueue : private StrIndexed{
+	
+public:
+	void clear();
+	void enqueue(string);
+	bool dequeue(string &);
+	bool isEmpty();
+	void dump();
+};
+#endif                                                                 
+*****************************************************************
+                                                                 
+cat StrQueue.cpp
+/*************************************************************************
+
+Author:				Qiguang Yang
+Last Rev. Date:		April 1, 2016
+
+Description:		This StrQueue class is StrIndexed private inheritance.
+					It provides functions to enqueue and dequeue members 
+					from link list. All members in StrStack are not directly 
+					used in StrIndexed class.
+**************************************************************************/
+#include <iostream>
+#include <string>
+#include "StrQueue.h"
+#include "StrNode.h"
+using namespace std;
+
+#ifndef NULL
+#define NULL 0
+#endif
+
+//Clear StrLL linked list
+void StrQueue::clear(){ StrIndexed::clear(); };
+
+//Insert a member at the back of the list.
+void StrQueue::enqueue(string v){ StrIndexed:insertAt((StrIndexed::numElements()-1),v); };
+
+//Remove a member from the front of the list.
+bool StrQueue::dequeue(string &v){ 
+	if (Head == NULL){
+		v = "Absolutely nothing";
+		return false;
+	}
+
+	else{
+		StrIndexed::removeAt(0,v);
+		return true; 
+	}
+};
+
+//Check if the StrLL linked list is empty
+bool StrQueue::isEmpty(){
+	if(StrIndexed::numElements() == 0){
+		return true;
+	}
+
+	else{
+		return false;
+	}
+};
+
+//Print out the whole list
+void StrQueue::dump(){
+	cout << "front: ";
+	StrIndexed::dump();
+	cout << " :back";
+};                                                                 
+*****************************************************************
+                                                                 
+cat StrSet.h
+/*************************************************************************
+
+Author:            Qiguang Yang
+Last Rev. Date:    April 1, 2016
+Class Name:        StrSet
+
+Data Members:      None
+
+**************************************************************************/
+#include <iostream>
+#include <string>
+#include "StrLL.h"
+#include "StrNode.h"
+
+using namespace std;
+
+class StrSet : public StrLL {
+
+public:
+	StrSet();
+	~StrSet();
+	StrSet(const StrSet &);
+	void	operator= (const StrSet &);
+	bool    insert(string);
+	bool	remove(string);
+	bool	isEmpty();
+	friend	ostream &operator<<(ostream &out, const StrSet &);
+	StrSet	operator+ (const StrSet &) const;
+	StrSet	operator* (const StrSet &) const;
+	StrSet	operator- (const StrSet &) const;
+	bool	operator<=(const StrSet &) const;
+	bool	operator>=(const StrSet &) const;
+	bool	operator==(const StrSet &) const;
+};                                                                 
+*****************************************************************
+                                                                 
+cat StrSet.cpp
+/*************************************************************************
+
+Author:				Qiguang Yang
+Last Rev. Date:		April 1, 2016
+
+Description:		This StrSet class contains operator overloading functions.
+					The operator will be test in client file. StrSet is StrLL 
+					public inheritance. Because its clear and pump functions 
+					are directly used in StrLL class. All members in StrStack 
+					are not directly used in StrIndexed class.
+
+**************************************************************************/
+
+#include <iostream>
+#include <string>
+#include "StrSet.h"
+#include "StrNode.h"
+
+using namespace std;
+
+#ifndef NULL
+#define NULL 0
+#endif
+
+StrSet::StrSet():StrLL(){};
+
+StrSet::~StrSet(){ };
+
+StrSet::StrSet(const StrSet &rhsList){
+  //initialize Head to NULL and use the overloaded 
+  //assignment operator for brevity
+  Head = NULL;
+  *this = rhsList;
+}
+
+//Binary operator =
+void StrSet::operator=(const StrSet &rhsList){
+  StrLL::operator=(rhsList);
+}
+
+//Inserting value to set
+bool StrSet::insert(string i){
+	StrNode* Last = Head;
+	StrNode* Next;
+
+	if(Head == NULL){
+
+		StrNode* NewNode = new StrNode(i, Head);
+
+		Head = NewNode;
+
+		return true;
+	}
+
+	else{
+		Next = Last->getNextNode();
+
+		if(Last->getValue() == i){
+				return false;
+			}
+
+		while(Next != NULL){
+			Last = Next;
+			if(Last->getValue() == i){
+				return false;
+			}
+			Next = Next->getNextNode();
+		}
+
+		Next = new StrNode(i, NULL);
+		Last->setNextNode(Next);
+
+		return true;
+	}
+
+};
+
+//Remove value from set
+bool StrSet::remove(string i){
+
+	StrNode* Lead  = Head;
+	StrNode* Trail = Head;
+
+	bool found  = false;
+
+	if (Head == NULL){
+
+		return false;
+
+	}
+
+	else if(Head->getValue() == i){
+
+		found = true;
+		Head = Head->getNextNode();
+		delete Lead;
+
+	}
+
+	else{
+
+		Lead = Lead->getNextNode();
+
+		while(Lead != NULL && !found){
+
+			if(Lead->getValue() == i){
+				found = true;
+
+				Trail->setNextNode(Lead->getNextNode());
+				delete Lead;
+				Lead = NULL;
+			}
+
+			else {
+
+				Trail = Lead;
+				Lead  = Lead->getNextNode();
+
+			}
+		}
+	}
+
+	return found;
+};
+
+//Check if the set is empty
+bool StrSet::isEmpty(){
+
+	if(Head == NULL){
+		return true;
+	}
+
+	else{
+		return false;
+	}
+};
+
+//Binary output operator <<
+ostream &operator<<(ostream &out, const StrSet &rhsSet){
+
+	StrNode* CurNode = rhsSet.Head;
+
+	while(CurNode != NULL){
+		cout << CurNode->getValue() << endl;
+		CurNode = CurNode->getNextNode();
+	}
+
+	return out;
+};
+
+//Binary operator +
+StrSet StrSet::operator+ (const StrSet &rhsSet) const{
+
+	StrSet temp;
+	StrNode* next = rhsSet.Head;
+
+	temp = *this;
+
+	while(next != NULL){
+		temp.insert(next->getValue());
+		next = next->getNextNode();
+	}
+
+	return temp;
+};
+
+//Binary operator *
+StrSet StrSet::operator* (const StrSet &rhsSet) const{
+	
+	StrSet output;
+	StrSet temp;
+	StrNode* next = rhsSet.Head;
+
+	temp = *this;
+
+	while(next != NULL){
+		if(!temp.insert(next->getValue())){
+			output.insert(next->getValue());
+		}
+		next = next->getNextNode();
+	}
+
+	return output;
+};
+
+//Binary operator -
+StrSet StrSet::operator- (const StrSet &rhsSet) const{
+	
+	StrSet temp;
+	StrNode* next = rhsSet.Head;
+
+	temp = *this;
+
+	while(next != NULL){
+		temp.remove(next->getValue());
+		next = next->getNextNode();
+	}
+
+	return temp;
+
+};
+
+//Binary operator <=
+bool StrSet::operator<=(const StrSet &rhsSet) const{
+	
+	bool check;
+	StrSet temp;
+	StrNode* next = rhsSet.Head;
+
+	temp = *this;
+
+	while(next != NULL){
+		temp.remove(next->getValue());
+		next = next->getNextNode();
+	}
+
+	check = temp.isEmpty();
+
+	if(check){
+		return true;
+	}
+
+	else{ 
+		return false;
+	}
+};
+
+//Binary operator >=
+bool StrSet::operator>=(const StrSet &rhsSet) const{
+	
+	StrSet temp;
+	temp = *this;
+
+	return !(temp<=rhsSet);
+};
+
+//Binary operator ==
+bool StrSet::operator==(const StrSet &rhsSet) const{
+	
+	StrSet temp;
+	temp = *this;
+
+	return (temp<=rhsSet && temp>=rhsSet);
+};                                                                 
+*****************************************************************
+                                                                 
+cat StrTest.cpp
+/*************************************************************************
+
+Author:            Qiguang Yang
+Last Rev. Date:    April 1, 2016
+
+Description:       Testing file for StrIndexed, StrStack, StrQueue, and
+                   StrSet clases
+ 
+**************************************************************************/
+
+#include <iostream>
+#include <string>
+#include "StrLL.h"
+#include "StrStack.h"
+#include "StrQueue.h"
+#include "StrSet.h"
+#include "StrIndexed.h"
+using namespace std;
+
+int main(){
+
+  string v;
+
+  //StrIndexed Testing
+  /////////////////////////////////////
+  cout << "\n\n--StrIndexed Testing--\n\n";
+  StrIndexed I;
+  I.insertAt(0, "car");
+  I.insertAt(0, "par");
+  I.insertAt(0, "tar");
+  I.insertAt(0, "scar");
+  I.insertAt(0, "car");
+  I.insertAt(0, "bar");
+  I.insertAt(0, "far");
+  I.dump(1);
+  cout << endl << endl;
+
+  I.removeAt(0, v);
+  cout << " " << v << " removed at index 0" <<endl;
+  I.dump(true);
+  cout << endl << endl;;
+
+  if(I.removeAt(5, v)){ 
+    cout << "\'true\' bool return worked properly on this test" << endl;
+  }
+  else{
+    cerr << "\'true\' bool return test failed!\n";   
+  } 
+  cout << " " << v << " removed at index 5" << endl;
+  cout << endl;
+
+  if(I.removeAt(6, v)){
+    cerr << "\'false\' bool return test failed!\n"; 
+  }
+  else{  
+    cout << "\'false\' bool return worked properly on this test" << endl;
+  } 
+  cout << " " << v << " removed, attempted at index 6" << endl;
+  cout << endl;
+
+  cout << "Current list:" << endl;
+  I.dump(1);
+  cout << endl << endl;
+
+  I.insertAt(2,"LOOK A LEPRECHAUN! GRAB THE GOLD!");
+  I.dump(true);
+  cout << endl;
+
+  I.removeAt(2, v);
+  I.insertAt(2,"OH NO HE GOT AWAY!");
+  I.dump(true);
+  cout << endl << endl;
+
+  I.removeAt(2, v);
+  cout << "When passing 'true' to StrIndexed's dump function, "
+       << "\nthe number of elements in the list should be displayed:" << endl;
+  I.dump(true);
+  cout << endl << endl;
+  cout << "When passing 'false' , or no argument at all, to StrIndexed's dump function, "
+       << "\nthe number of elements in the list should NOT be displayed:" << endl;
+  I.dump(false);
+  cout << endl;
+  I.dump();
+  cout << endl << endl;
+
+   
+  I.clear();
+  cout << "List cleared" << endl;
+  I.dump(true);
+  cout << endl;
+
+  I.removeAt(0, v);
+  cout << "Empty list. " << v << " removed." << endl;
+
+  I.removeAt(-1, v);
+
+  cout << "Empty list. " << v << " removed." << endl;
+
+  cout << "\n--End StrIndexed Testing--\n\n";
+  /////////////////////////////////////
+
+  //StrStack Testing
+  /////////////////////////////////////
+  cout << "\n\n--StrStack Testing--\n\n";
+  StrStack Stack;
+  Stack.push("how");
+  Stack.push("now");
+  Stack.push("brown");
+  Stack.push("cow");
+  Stack.push("how");
+  Stack.push("now");
+  Stack.push("brown");
+  Stack.push("cow");
+  Stack.dump();
+  Stack.pop(v);
+  cout << endl << v <<" was popped\n";
+  Stack.dump();
+  Stack.pop(v);
+  cout << endl << v <<" was popped\n";
+  Stack.dump();
+  Stack.pop(v);
+  cout << endl << v <<" was popped\n";
+  Stack.dump();
+
+  if(Stack.pop(v)){
+    cout << endl << v <<" was popped\n";
+    Stack.dump();
+  }
+  else{
+    cerr << "pop(v) (\'true\' return) test failed" << endl;
+  }
+  
+  cout << "\nPushing sow to the top:" << endl;
+  Stack.push("sow");
+  Stack.dump();
+  cout << endl;
+  
+  if(!Stack.isEmpty()){
+    Stack.clear();
+    cout << endl << "Stack cleared!\n";
+  }
+  else{
+    cerr << "isEmpty() (\'false\' return) test failed" << endl;
+  } 
+
+  if(Stack.isEmpty()){
+    if(!Stack.pop(v)){
+      cout <<  v <<" was popped\n";
+      Stack.dump();
+    }
+    else{
+      cerr << "pop(v) (\'false\' return) test failed" << endl;
+    }
+  }
+  else{
+    cout << "isEmpty() (\'true\' return) test failed" << endl;
+  } 
+
+  cout << "\n\n--End StrStack Testing--\n\n";
+  /////////////////////////////////////
+
+  //StrQueue Testing
+  /////////////////////////////////////
+  cout << "\n\n--StrQueue Testing--\n\n";
+  StrQueue Queue;
+  Queue.enqueue("how");
+  Queue.enqueue("now");
+  Queue.enqueue("brown");
+  Queue.enqueue("cow");
+  Queue.enqueue("how");
+  Queue.enqueue("now");
+  Queue.enqueue("brown");
+  Queue.enqueue("cow");
+  Queue.dump();
+  Queue.dequeue(v);
+  cout << endl << v <<" was dequeued\n";
+  Queue.dump();
+  Queue.dequeue(v);
+  cout << endl << v <<" was dequeued\n";
+  Queue.dump();
+  Queue.dequeue(v);
+  cout << endl << v <<" was dequeued\n";
+  Queue.dump();
+
+  if(Queue.dequeue(v)){
+    cout << endl << v <<" was dequeued\n";
+    Queue.dump();
+  }
+  else{
+    cerr << "dequeue(v) (\'true\' return) test failed" << endl;
+  }
+    
+  cout << "\nEnqueueing sow at the back:" << endl;
+  Queue.enqueue("sow");
+  Queue.dump();
+  cout << endl;
+
+  if(!Queue.isEmpty()){
+    Queue.clear();
+    cout << endl << "Queue cleared!\n";
+  }
+  else{
+    cerr << "isEmpty() (\'false\' return) test failed" << endl;
+  } 
+
+  if(Queue.isEmpty()){
+    if(!Queue.dequeue(v)){
+      cout <<  v <<" was dequeued\n";
+      Queue.dump();
+    }
+    else{
+      cerr << "dequeue(v) (\'false\' return) test failed" << endl;
+    }
+  }
+  else{
+    cerr << "isEmpty() (\'true\' return) test failed" << endl;
+  } 
+
+  cout << "\n\n--End StrQueue Testing--\n\n";
+  /////////////////////////////////////
+
+  //StrSet Testing
+  /////////////////////////////////////
+  cout << "\n\n--StrSet Testing--\n\n";
+  StrSet S1, S2, S3, S4, S5, S6;
+
+  cout << "Set Insert (no duplicates) Test: " << endl;
+  S1.insert("D");
+  S1.insert("D");
+  S1.insert("Y");
+  S1.insert("N");
+  S1.insert("A");
+  S1.insert("M");
+  S1.insert("I");
+  S1.insert("C");
+  S1.insert("D");
+  S1.insert("Y");
+  S1.insert("N");
+  S1.insert("A");
+  S1.insert("M");
+  S1.insert("I");
+  S1.insert("C");
+  S1.insert("C");
+  cout << S1 << endl;
+
+  cout << "\nCopy Constructor Test: " << endl;
+  StrSet Test = S1;
+  Test.insert("S");
+  Test.remove("D");
+  cout << "S1:   " << S1   << endl;
+  cout << "Test: " << Test << endl;
+
+  cout << "\nAssignment Operator Test: " << endl;
+  Test = S1;
+  Test.remove("D");
+  Test.remove("N");
+  Test.remove("C");
+  Test.insert("O");
+  cout << "S1:   " << S1   << endl;
+  cout << "Test: " << Test << endl;
+    
+  S2.insert("C");
+  S2.insert("A");
+  S2.insert("R");
+  S2.insert("D");
+
+  cout << "\nUnion Tests: " << endl;
+  Test = S1 + S2;
+  cout << "S1:   " << S1   << endl;
+  cout << "S2:   " << S2   << endl;
+  cout << "Test S1 + S2: " << Test << endl;
+  cout << "---" << endl;
+  Test = S2 + S1;
+  cout << "S1:   " << S1   << endl;
+  cout << "S2:   " << S2   << endl;
+  cout << "Test S2 + S1: " << Test << endl;
+
+  cout << "\nIntersection Tests: " << endl;
+  Test = S1 * S2;
+  cout << "S1:   " << S1   << endl;
+  cout << "S2:   " << S2   << endl;
+  cout << "Test S1 * S2: " << Test << endl;
+  cout << "---" << endl;
+  Test = S2 * S1;
+  cout << "S1:   " << S1   << endl;
+  cout << "S2:   " << S2   << endl;
+  cout << "Test S2 * S1: " << Test << endl;
+
+  cout << "\nDifference Tests: " << endl;
+  Test = S1 - S2;
+  cout << "S1:   " << S1   << endl;
+  cout << "S2:   " << S2   << endl;
+  cout << "Test S1 - S2: " << Test << endl;
+  cout << "---" << endl;
+  Test = S2 - S1;
+  cout << "S1:   " << S1   << endl;
+  cout << "S2:   " << S2   << endl;
+  cout << "Test S2 - S1: " << Test << endl;
+
+  
+  cout << "\nQuick insert and remove test:" << endl;
+
+  cout << "\nS5 should be empty. Let's make sure...";
+  cout << "\nisEmpty should be true on a list that doesn't have anything in it "
+       << "(will output 1 if correct): " << S5.isEmpty();
+  cout << "\nTwo dots (an empty list) should be printed: " << S3 << endl;  
+  
+  S3.insert("I");
+  S3.insert("am");
+  S3.insert("Sam");
+  S3.remove("I");
+  S3.remove("am");
+  S3.remove("Sam");
+
+  cout << "\nS3 should be empty. Let's make sure...";
+  cout << "\nisEmpty should be true on a list which has had everything removed " 
+       << "(will output 1 if correct): " << S3.isEmpty();
+  cout << "\nTwo dots (an empty list) should be printed: " << S3 << endl;
+  
+  S3.insert("I");
+  S3.insert("am");
+  S3.insert("Sam");
+  S3.insert("Sam");
+  S3.insert("I");
+  S3.insert("am");
+    
+  S4.insert("That");
+  S4.insert("Sam");
+  S4.insert("I");
+  S4.insert("am");
+  S4.insert("That");
+  S4.insert("Sam");
+  S4.insert("I");
+  S4.insert("am");
+  S4.insert("I");
+  S4.insert("do");
+  S4.insert("not");
+  S4.insert("like");
+  S4.insert("that");
+  S4.insert("Sam");
+  S4.insert("I");
+  S4.insert("am");
+
+  cout << "\nNew Lists: " << endl;
+  cout << "S3:   " << S3   << endl;
+  cout << "S4:   " << S4   << endl;
+
+
+  cout << "\nEquality and subset Tests: " << endl;
+  cout << "S3 <= S4:   " << (S3 <= S4)  << endl;
+  cout << "S3 == S3:   " << (S3 == S3)  << endl;
+  cout << "S3 <= S3:   " << (S3 <= S3)  << endl;
+  cout << "S5 <= S6:   " << (S5 <= S6)  << endl;
+  cout << "S5 == S6:   " << (S5 == S6)  << endl;
+  cout << "S5 <= S3:   " << (S5 <= S3)  << endl;
+  cout << "S3 == S4:   " << (S3 == S4)  << endl;
+  cout << "S3 >= S4:   " << (S3 >= S4)  << endl;
+  cout << "S3 >= S4:   " << (S3 >= S4)  << endl;
+  cout << "S1 <= S2:   " << (S1 <= S2)  << endl;
+  cout << "S5 >= S1:   " << (S5 >= S1)  << endl;
+  
+  cout << "\nClear the lists: " << endl;
+  S1.clear();
+  S2.clear();
+  S3.clear();
+  S4.clear();
+  Test.clear();
+  cout << "S1:   " << S1   << endl;
+  cout << "S2:   " << S2   << endl;
+  cout << "S3:   " << S3   << endl;
+  cout << "S4:   " << S4   << endl;
+  cout << "Test: " << Test << endl;
+
+  cout << "\n\n--End StrSet Testing--\n\n";
+  /////////////////////////////////////
+  cout << "\n-- END TESTING --\n";
+ 
+  return 0;
+}
+
+                                                                 
+*****************************************************************
+                                                                 
+g++ -std=c++11 ~ringenberg/CSCI241/LP4/StrTest.cpp StrSet.cpp StrStack.cpp StrQueue.cpp StrIndexed.cpp StrLL.cpp StrNode.cpp
+
+
+--StrIndexed Testing--
+
+. far->bar->car->scar->tar->par->car-> .7
+
+ far removed at index 0
+. bar->car->scar->tar->par->car-> .6
+
+'true' bool return worked properly on this test
+ car removed at index 5
+
+'false' bool return worked properly on this test
+ absolutely nothing removed, attempted at index 6
+
+Current list:
+. bar->car->scar->tar->par-> .4
+
+. bar->car->LOOK A LEPRECHAUN! GRAB THE GOLD!->scar->tar->par-> .5
+. bar->car->OH NO HE GOT AWAY!->scar->tar->par-> .5
+
+When passing 'true' to StrIndexed's dump function, 
+the number of elements in the list should be displayed:
+. bar->car->scar->tar->par-> .4
+
+When passing 'false' , or no argument at all, to StrIndexed's dump function, 
+the number of elements in the list should NOT be displayed:
+. bar->car->scar->tar->par-> .
+. bar->car->scar->tar->par-> .
+
+List cleared
+.  .4
+Empty list. absolutely nothing removed.
+Empty list. absolutely nothing removed.
+
+--End StrIndexed Testing--
+
+
+
+--StrStack Testing--
+
+top: . cow->brown->now->how->cow->brown->now->how-> . :bottom
+cow was popped
+top: . brown->now->how->cow->brown->now->how-> . :bottom
+brown was popped
+top: . now->how->cow->brown->now->how-> . :bottom
+now was popped
+top: . how->cow->brown->now->how-> . :bottom
+how was popped
+top: . cow->brown->now->how-> . :bottom
+Pushing sow to the top:
+top: . sow->cow->brown->now->how-> . :bottom
+
+Stack cleared!
+isEmpty() ('true' return) test failed
+
+
+--End StrStack Testing--
+
+
+
+--StrQueue Testing--
+
+front: . now->brown->cow->how->now->brown->cow->how-> . :back
+now was dequeued
+front: . brown->cow->how->now->brown->cow->how-> . :back
+brown was dequeued
+front: . cow->how->now->brown->cow->how-> . :back
+cow was dequeued
+front: . how->now->brown->cow->how-> . :back
+how was dequeued
+front: . now->brown->cow->how-> . :back
+Enqueueing sow at the back:
+front: . now->brown->cow->sow->how-> . :back
+
+Queue cleared!
+
+
+--End StrQueue Testing--
+
+
+
+--StrSet Testing--
+
+Set Insert (no duplicates) Test: 
+D
+Y
+N
+A
+M
+I
+C
+
+
+Copy Constructor Test: 
+S1:   D
+Y
+N
+A
+M
+I
+C
+
+Test: Y
+N
+A
+M
+I
+C
+S
+
+
+Assignment Operator Test: 
+S1:   D
+Y
+N
+A
+M
+I
+C
+
+Test: Y
+A
+M
+I
+O
+
+
+Union Tests: 
+S1:   D
+Y
+N
+A
+M
+I
+C
+
+S2:   C
+A
+R
+D
+
+Test S1 + S2: D
+Y
+N
+A
+M
+I
+C
+R
+
+---
+S1:   D
+Y
+N
+A
+M
+I
+C
+
+S2:   C
+A
+R
+D
+
+Test S2 + S1: C
+A
+R
+D
+Y
+N
+M
+I
+
+
+Intersection Tests: 
+S1:   D
+Y
+N
+A
+M
+I
+C
+
+S2:   C
+A
+R
+D
+
+Test S1 * S2: C
+A
+D
+
+---
+S1:   D
+Y
+N
+A
+M
+I
+C
+
+S2:   C
+A
+R
+D
+
+Test S2 * S1: D
+A
+C
+
+
+Difference Tests: 
+S1:   D
+Y
+N
+A
+M
+I
+C
+
+S2:   C
+A
+R
+D
+
+Test S1 - S2: Y
+N
+M
+I
+
+---
+S1:   D
+Y
+N
+A
+M
+I
+C
+
+S2:   C
+A
+R
+D
+
+Test S2 - S1: R
+
+
+Quick insert and remove test:
+
+S5 should be empty. Let's make sure...
+isEmpty should be true on a list that doesn't have anything in it (will output 1 if correct): 1
+Two dots (an empty list) should be printed: 
+
+S3 should be empty. Let's make sure...
+isEmpty should be true on a list which has had everything removed (will output 1 if correct): 1
+Two dots (an empty list) should be printed: 
+
+New Lists: 
+S3:   I
+am
+Sam
+
+S4:   That
+Sam
+I
+am
+do
+not
+like
+that
+
+
+Equality and subset Tests: 
+S3 <= S4:   1
+S3 == S3:   0
+S3 <= S3:   1
+S5 <= S6:   1
+S5 == S6:   0
+S5 <= S3:   1
+S3 == S4:   0
+S3 >= S4:   0
+S3 >= S4:   0
+S1 <= S2:   0
+S5 >= S1:   0
+
+Clear the lists: 
+S1:   
+S2:   
+S3:   
+S4:   
+Test: 
+
+
+--End StrSet Testing--
+
+
+-- END TESTING --
+                                                                 
+*****************************************************************
